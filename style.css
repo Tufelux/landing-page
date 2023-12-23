@@ -4,7 +4,18 @@
     box-sizing: border-box;
 }
 
-ul, a {
+body {
+    height: 100vh;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.hero {
+    background-color:#1f2937
+}
+
+ul, a, p {
     list-style:none;
     color: #e5e7eb;
     text-decoration: none;
@@ -15,7 +26,6 @@ ul, a {
 
 .header {
     padding: 15px;
-    background-color: #1f2937;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -27,9 +37,58 @@ h1 {
     color: #f9faf8;
 }
 
-/* .footer {
-    display: flex;
-    justify-content: center;
-    align-items: end;
+.hero_info h1 {
+    font-size: 48px
 }
- */
+
+.hero_main {
+    display: flex;
+    gap: 50px;
+    padding: 70px;
+    justify-content: center;
+}
+
+.hero_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+
+.hero_img {
+    height: 200px;
+    width: 400px;
+}
+
+.hero_signup {
+    background-color: #3882f6;
+    padding: 5px;
+    width: 90px;
+    border-radius: 8px;
+    border: none;
+    color: #f9faf8;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+}
+
+.information h1 {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.plimpus {
+    height: 200px;
+}
+
+.information ul {
+    display: flex;
+}
